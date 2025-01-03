@@ -1,0 +1,330 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: url('C:/Users/HP/Downloads/news.jpg') no-repeat center center;
+    background-color: white;
+}
+
+header {
+    background: url('C:/Users/HP/Downloads/paper.jpg') no-repeat center center;
+    background-color: white;
+    padding: 50px 0;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+header:hover {
+    background: url('C:/Users/HP/Downloads/ingo.jpg') no-repeat center center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 3em;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: rgb(6, 6, 6);
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: rgb(101, 31, 97);
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 40px;
+    background-color: rgb(142, 138, 140);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2, h3 {
+    text-align: center;
+    text-decoration: underline;
+}
+
+h2 {
+    font-size: 3em;
+    color: #272525;
+}
+
+h3 {
+    font-size: 2em;
+    color: black;
+}
+
+p {
+    font-size: 1.1em;
+    color: black;
+}
+
+form {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: grey;
+    color: blue;
+}
+
+form:hover {
+    background-color: rgb(117, 99, 121);
+}
+
+label {
+    font-weight: bold;
+    color: rgb(8, 6, 6);
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    padding: 10px;
+    border: 1px solid #363535;
+    border-radius: 5px;
+    font-size: 1em;
+    width: 100%;
+}
+
+button[type="submit"] {
+    padding: 10px 20px;
+    background-color: rgb(100, 65, 100);
+    color: rgb(121, 168, 197);
+    border: none;
+    border-radius: 50px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: rgb(118, 138, 171);
+}
+
+footer {
+    background: url('C:/Users/HP/Downloads/bro.jpg') no-repeat center center;
+    background-color: hsl(0, 1%, 36%);
+    padding: 20px;
+    text-align: center;
+}
+
+footer:hover {
+    background: url('C:/Users/HP/Downloads/patric.jpg') no-repeat center center;
+}
+
+img:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    nav ul li {
+     
+        margin-bottom: 10px;
+    }
+
+    nav ul li a {
+        font-size: 1.1em;
+    }
+
+    section {
+        padding: 10px;
+    }
+
+    h2 {
+        font-size: 1.6em;
+    }
+
+    form {
+        gap: 10px;
+    }
+
+    button[type="submit"] {
+        font-size: 1em;
+        padding: 8px 16px;
+    }
+}
+
+.content {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#more-text {
+    display: none;
+    color: #555;
+}
+
+#read-more-btn {
+    background-color: #a6eada;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    font-size: 16px;
+}
+
+#read-more-btn:hover {
+    background-color: #6e4584;
+}
+
+.sidebar {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: -250px;
+    background-color: #dceaf8;
+    color: white;
+    z-index: 1000;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+}
+
+.sidebar.active {
+    left: 0;
+}
+
+.sidebar nav ul {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+}
+
+.sidebar nav ul li {
+    padding: 10px;
+    display: block;
+}
+
+.sidebar nav ul li a {
+    color: rgb(18, 15, 19);
+    text-decoration: none;
+    display: block;
+    font-size: 18px;
+}
+
+.hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 25px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    position:fixed;
+    top: 20px;
+    left: 20px;
+}
+
+.hamburger div {
+    width: 30px;
+    height: 4px;
+    background-color: rgb(15, 14, 14);
+    border-radius: 5px;
+}
+
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    font-size: 30px;
+    color: rgb(16, 16, 16);
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 1100;
+}
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: flex;
+    }
+
+    .sidebar {
+        left: -250px; 
+        height: 100%;
+        padding-top: 60px;
+    }
+
+    .sidebar.active {
+        left: 0; 
+    }
+
+    main {
+        margin-left: 0;
+    }
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+.news-ticker {
+    background-color: #7bc2aa;
+    color: rgb(127, 47, 124);
+    padding: 10px 0;
+    font-size: 18px;
+    position: relative;
+    overflow: hidden;
+    margin-top: 20px; 
+}
+
+.news-ticker-content {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    animation: tickerAnimation 30s linear infinite;
+}
+
+.news-ticker img {
+    margin-right: 10px;
+    height: 50px;
+}
+
+@keyframes tickerAnimation {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
