@@ -3,12 +3,12 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background: url('C:/Users/HP/Downloads/news.jpg') no-repeat center center;
+    background: url('https://raw.githubusercontent.com/abdullah0501232/index/main/images/news.jpg') no-repeat center center;
     background-color: white;
 }
 
 header {
-    background: url('C:/Users/HP/Downloads/paper.jpg') no-repeat center center;
+    background: url('https://raw.githubusercontent.com/abdullah0501232/index/main/images/paper.jpg') no-repeat center center;
     background-color: white;
     padding: 50px 0;
     text-align: center;
@@ -16,7 +16,7 @@ header {
 }
 
 header:hover {
-    background: url('C:/Users/HP/Downloads/ingo.jpg') no-repeat center center;
+    background: url('https://raw.githubusercontent.com/abdullah0501232/index/main/images/ingo.jpg') no-repeat center center;
 }
 
 header h1 {
@@ -122,14 +122,14 @@ button[type="submit"]:hover {
 }
 
 footer {
-    background: url('C:/Users/HP/Downloads/bro.jpg') no-repeat center center;
+    background: url('https://raw.githubusercontent.com/abdullah0501232/index/main/images/bro.jpg') no-repeat center center;
     background-color: hsl(0, 1%, 36%);
     padding: 20px;
     text-align: center;
 }
 
 footer:hover {
-    background: url('C:/Users/HP/Downloads/patric.jpg') no-repeat center center;
+    background:url('https://raw.githubusercontent.com/abdullah0501232/index/main/images/patric.jpg') no-repeat center center;
 }
 
 img:hover {
