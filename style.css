@@ -3,10 +3,10 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-     background:  https://raw.githubusercontent.com/abdullah0501232/index/main/bro.jpg
+  background: url('https://raw.githubusercontent.com/abdullah0501232/index/main/bro.jpg') no-repeat center center;
+background-color: white;
+background-size: cover;
 
-
-    background-color: white;
 }
 
 header {
